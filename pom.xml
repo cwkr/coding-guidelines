@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
     <name>cwkr-coding-guidelines</name>
     <url>https://github.com/cwkr/coding-guidelines</url>
-    <description>Coding conventions and best best practices</description>
+    <description>Coding conventions and best practices</description>
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
