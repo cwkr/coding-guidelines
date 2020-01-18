@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.cwkr</groupId>
-    <artifactId>cwkr-checkstyle</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <artifactId>cwkr-coding-guidelines</artifactId>
+    <version>1.1</version>
     <packaging>jar</packaging>
-    <name>cwkr-checkstyle</name>
+    <name>cwkr-coding-guidelines</name>
     <url>https://github.com/cwkr/coding-guidelines</url>
-    <description>Checkstyle configuration and custom checks</description>
+    <description>Coding conventions and best best practices</description>
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
