@@ -18,8 +18,8 @@
     </module>
     <module name="LineLength">
         <property name="fileExtensions" value="java"/>
-        <property name="max" value="100"/>
-        <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
+        <property name="max" value="120"/>
+        <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://|class.+extends|class.+implements|interface.+extends"/>
     </module>
     <module name="RegexpSingleline">
         <!-- \s matches whitespace character, $ matches end of line. -->
@@ -234,23 +234,12 @@
         <module name="CommentsIndentation">
             <property name="tokens" value="SINGLE_LINE_COMMENT, BLOCK_COMMENT_BEGIN"/>
         </module>
-        <module name="StringLiteralEquality"/>
-        <module name="EqualsHashCode"/>
         <module name="EmptyStatement"/>
-        <module name="UnusedImports"/>
-        <module name="MutableException"/>
         <module name="FinalClass"/>
         <module name="HideUtilityClassConstructor"/>
-        <module name="IllegalThrows">
-            <property name="illegalClassNames" value="Error, RuntimeException, Throwable, Exception,
-                    java.lang.Error, java.lang.RuntimeException, java.lang.Throwable, java.lang.Exception"/>
-        </module>
-        <module name="CyclomaticComplexity">
-            <property name="max" value="10"/>
-        </module>
-        <module name="MethodLength">
-            <property name="max" value="50"/>
-            <property name="countEmpty" value="false"/>
+        <module name="SuppressionXpathSingleFilter">
+            <property name="checks" value="HideUtilityClassConstructor"/>
+            <property name="query" value="//*[MODIFIERS//*[@text = 'UtilityClass' or @text='NoArgsConstructor' or @text = 'SpringBootApplication']]/descendant-or-self::node()"/>
         </module>
     </module>
 </module>

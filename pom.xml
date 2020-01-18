@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.cwkr</groupId>
-    <artifactId>cwkr-checkstyle</artifactId>
-    <version>1.0</version>
+    <artifactId>cwkr-coding-guidelines</artifactId>
+    <version>1.1</version>
     <packaging>jar</packaging>
-    <name>${project.groupId}:${project.artifactId}</name>
-    <url>https://github.com/cwkr/checkstyle</url>
-    <description>Checkstyle configuration and custom checks</description>
+    <name>cwkr-coding-guidelines</name>
+    <url>https://github.com/cwkr/coding-guidelines</url>
+    <description>Coding conventions and best best practices</description>
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
@@ -23,12 +23,12 @@
         </developer>
     </developers>
     <scm>
-        <url>https://github.com/cwkr/checkstyle</url>
-        <connection>scm:git:git://github.com/cwkr/checkstyle.git</connection>
-        <developerConnection>scm:git:git@github.com:cwkr/checkstyle.git</developerConnection>
+        <url>https://github.com/cwkr/coding-guidelines</url>
+        <connection>scm:git:git://github.com/cwkr/coding-guidelines.git</connection>
+        <developerConnection>scm:git:git@github.com:cwkr/coding-guidelines.git</developerConnection>
     </scm>
     <issueManagement>
-        <url>https://github.com/cwkr/checkstyle/issues</url>
+        <url>https://github.com/cwkr/coding-guidelines/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
     <properties>
