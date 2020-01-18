@@ -15,7 +15,6 @@
     <rule ref="category/java/design.xml/AvoidRethrowingException" />
     <rule ref="category/java/design.xml/AvoidThrowingNewInstanceOfSameException" />
     <rule ref="category/java/design.xml/AvoidThrowingRawExceptionTypes" />
-    <rule ref="category/java/design.xml/AvoidUncheckedExceptionsInSignatures" />
     <rule ref="category/java/design.xml/DoNotExtendJavaLangError" />
     <rule ref="category/java/errorprone.xml/DoNotExtendJavaLangThrowable" />
     <rule ref="category/java/errorprone.xml/AvoidCatchingNPE" />
