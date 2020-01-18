@@ -47,14 +47,6 @@
         </repository>
     </distributionManagement>
     <build>
-        <resources>
-            <resource>
-                <directory>${project.basedir}</directory>
-                <includes>
-                    <include>cwkr_checks.xml</include>
-                </includes>
-            </resource>
-        </resources>
         <!-- lock down plugins versions to avoid using Maven defaults -->
         <pluginManagement>
             <plugins>
