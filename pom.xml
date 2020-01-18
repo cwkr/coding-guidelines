@@ -6,8 +6,8 @@
     <artifactId>cwkr-checkstyle</artifactId>
     <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>${project.groupId}:${project.artifactId}</name>
-    <url>https://github.com/cwkr/checkstyle</url>
+    <name>cwkr-checkstyle</name>
+    <url>https://github.com/cwkr/coding-guidelines</url>
     <description>Checkstyle configuration and custom checks</description>
     <licenses>
         <license>
@@ -23,12 +23,12 @@
         </developer>
     </developers>
     <scm>
-        <url>https://github.com/cwkr/checkstyle</url>
-        <connection>scm:git:git://github.com/cwkr/checkstyle.git</connection>
-        <developerConnection>scm:git:git@github.com:cwkr/checkstyle.git</developerConnection>
+        <url>https://github.com/cwkr/coding-guidelines</url>
+        <connection>scm:git:git://github.com/cwkr/coding-guidelines.git</connection>
+        <developerConnection>scm:git:git@github.com:cwkr/coding-guidelines.git</developerConnection>
     </scm>
     <issueManagement>
-        <url>https://github.com/cwkr/checkstyle/issues</url>
+        <url>https://github.com/cwkr/coding-guidelines/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
     <properties>
