@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Recommended Rules"
+        xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        Recommended Rules.
+    </description>
+
+    <rule ref="javastyle.xml" />
+    <rule ref="javaexceptions.xml" />
+    <rule ref="javalogging.xml.xml" />
+    <rule ref="javamaintainability.xml.xml" />
+
+</ruleset>
