@@ -1,6 +1,6 @@
 # Coding Guidelines
 
-This project collects coding conventions and best best practices.
+This project collects coding conventions and best practices.
 
 
 ## Static Code Analysis
