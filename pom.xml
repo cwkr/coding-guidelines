@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.cwkr</groupId>
     <artifactId>cwkr-coding-guidelines</artifactId>
-    <version>1.1</version>
+    <version>1.2.0</version>
     <packaging>jar</packaging>
     <name>cwkr-coding-guidelines</name>
     <url>https://github.com/cwkr/coding-guidelines</url>
-    <description>Coding conventions and best best practices</description>
+    <description>Coding conventions and best practices</description>
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
@@ -47,14 +47,6 @@
         </repository>
     </distributionManagement>
     <build>
-        <resources>
-            <resource>
-                <directory>${project.basedir}</directory>
-                <includes>
-                    <include>cwkr_checks.xml</include>
-                </includes>
-            </resource>
-        </resources>
         <!-- lock down plugins versions to avoid using Maven defaults -->
         <pluginManagement>
             <plugins>
@@ -119,4 +111,16 @@
             </plugin>
         </plugins>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>net.sourceforge.pmd</groupId>
+            <artifactId>pmd-core</artifactId>
+            <version>6.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.pmd</groupId>
+            <artifactId>pmd-java</artifactId>
+            <version>6.20.0</version>
+        </dependency>
+    </dependencies>
 </project>
