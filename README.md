@@ -88,7 +88,7 @@ It can be used to check Java source code formatting using [Maven](https://maven.
         <dependency>
             <groupId>de.cwkr</groupId>
             <artifactId>cwkr-coding-guidelines</artifactId>
-            <version>1.1</version>
+            <version>1.2.0</version>
         </dependency>
     </dependencies>
     <executions>
