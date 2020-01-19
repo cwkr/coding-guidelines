@@ -11,17 +11,38 @@
 
     <rule name="AvoidFinalizeMethod"
             language="java"
-            message="Avoid using finalizer method."
+            message="Avoid using finalizer method"
             class="net.sourceforge.pmd.lang.rule.XPathRule">
         <description>
             Oracle has declared Object.finalize() as deprecated since JDK 9.
         </description>
-        <priority>2</priority>
+        <priority>1</priority>
         <properties>
             <property name="xpath">
                 <value>
                     <![CDATA[//MethodDeclaration[@Name='finalize'][@Arity = 0]]]>
                 </value>
+            </property>
+        </properties>
+    </rule>
+
+    <rule name="UseJavaTimeApi"
+          language="java"
+          message="Use "
+          class="net.sourceforge.pmd.lang.rule.XPathRule">
+        <description>
+            Please use the Java Time API in Java 8+
+        </description>
+        <priority>1</priority>
+        <properties>
+            <property name="xpath">
+                <value><![CDATA[//../ClassOrInterfaceType[
+        typeof(@Image, 'java.util.Date')
+        or
+        typeof(@Image, 'java.util.Calendar')
+        or
+        typeof(@Image, 'java.text.SimpleDateFormat')
+            ]]]></value>
             </property>
         </properties>
     </rule>

@@ -30,10 +30,7 @@
     <rule ref="category/java/codestyle.xml/AvoidProtectedFieldInFinalClass" />
     <rule ref="category/java/codestyle.xml/AvoidProtectedMethodInFinalClassNotExtending" />
     <rule ref="category/java/codestyle.xml/EmptyMethodInAbstractClassShouldBeAbstract" />
-    <rule ref="category/java/bestpractices.xml/MissingOverride" />
     <rule ref="category/java/codestyle.xml/NoPackage" />
-    <rule ref="category/java/codestyle.xml/DuplicateImports" />
-    <rule ref="category/java/codestyle.xml/UseDiamondOperator" />
     <rule ref="category/java/codestyle.xml/ControlStatementBraces">
         <properties>
             <property name="checkSingleIfStmt" value="false" />
@@ -52,10 +49,10 @@
             <property name="strict" value="true" />
         </properties>
     </rule>
-    <rule ref="category/java/errorprone.xml/OverrideBothEqualsAndHashcode" />
     <rule ref="category/java/custom.xml/AvoidFinalizeMethod" />
 
     <!-- Comparison -->
+    <rule ref="category/java/errorprone.xml/OverrideBothEqualsAndHashcode" />
     <rule ref="category/java/errorprone.xml/CompareObjectsWithEquals" />
     <rule ref="category/java/errorprone.xml/EqualsNull" />
     <rule ref="category/java/errorprone.xml/UseEqualsToCompareStrings" />
@@ -67,37 +64,6 @@
     <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault" />
 
     <!-- Loops -->
-    <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" />
-    <rule ref="category/java/bestpractices.xml/LooseCoupling" />
-    <rule ref="category/java/codestyle.xml/ForLoopShouldBeWhileLoop" />
     <rule ref="category/java/bestpractices.xml/AvoidReassigningLoopVariables" />
-
-    <!-- Unused code -->
-    <rule ref="category/java/bestpractices.xml/UnusedFormalParameter" />
-    <rule ref="category/java/bestpractices.xml/UnusedImports" />
-    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable" />
-    <rule ref="category/java/bestpractices.xml/UnusedPrivateField" />
-    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod" />
-
-    <!-- Unnecessary Code -->
-    <rule ref="category/java/codestyle.xml/DontImportJavaLang" />
-    <rule ref="category/java/codestyle.xml/ExtendsObject" />
-    <rule ref="category/java/codestyle.xml/UnnecessaryConstructor" />
-    <rule ref="category/java/codestyle.xml/UnnecessaryFullyQualifiedName" />
-    <rule ref="category/java/codestyle.xml/UnnecessaryModifier" />
-    <rule ref="category/java/codestyle.xml/UnnecessaryLocalBeforeReturn" />
-    <rule ref="category/java/errorprone.xml/UnnecessaryCaseChange" />
-    <rule ref="category/java/errorprone.xml/ImportFromSamePackage" />
-    <rule ref="category/java/codestyle.xml/UnnecessaryAnnotationValueElement" />
-    <rule ref="category/java/design.xml/UselessOverridingMethod" />
-    <rule ref="category/java/errorprone.xml/EmptyFinallyBlock" />
-    <rule ref="category/java/errorprone.xml/EmptyIfStmt" />
-    <rule ref="category/java/errorprone.xml/EmptyInitializer" />
-    <rule ref="category/java/errorprone.xml/EmptyStatementBlock" />
-    <rule ref="category/java/errorprone.xml/EmptyStatementNotInLoop" />
-    <rule ref="category/java/errorprone.xml/EmptySwitchStatements" />
-    <rule ref="category/java/errorprone.xml/EmptySynchronizedBlock" />
-    <rule ref="category/java/errorprone.xml/EmptyTryBlock" />
-    <rule ref="category/java/errorprone.xml/EmptyWhileStmt" />
 
 </ruleset>

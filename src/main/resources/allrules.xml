@@ -5,10 +5,11 @@
         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
     <description>
-        Recommended Rules acording to coding conventions and best practices.
+        Recommended Rules according to coding conventions and best practices.
     </description>
 
     <rule ref="javastyle.xml" />
+    <rule ref="javabettercode.xml" />
     <rule ref="javaexceptions.xml" />
     <rule ref="javalogging.xml" />
     <rule ref="javamaintainability.xml" />

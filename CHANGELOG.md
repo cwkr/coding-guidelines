@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `AvoidFinalizeMethod` rule
+- `UseJavaTimeApi` rule
+- Predefined PMD rule sets `allrules.xml`, `javabettercode.xml`, `javaexceptions.xml`, `javalogging.xml`, `javamaintainability.xml` and `javastyle.xml`
+
 
 ## [1.1] - 2020-01-18
 
