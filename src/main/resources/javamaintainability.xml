@@ -9,9 +9,16 @@
     </description>
 
     <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <priority>1</priority>
         <properties>
             <property name="classReportLevel" value="100" />
             <property name="methodReportLevel" value="15" />
+        </properties>
+    </rule>
+    <rule ref="category/java/design.xml/NPathComplexity">
+        <priority>1</priority>
+        <properties>
+            <property name="reportLevel" value="1000" />
         </properties>
     </rule>
 

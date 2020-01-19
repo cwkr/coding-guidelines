@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <ruleset name="Custom Java Rules"
         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -16,7 +15,7 @@
         <description>
             Oracle has declared Object.finalize() as deprecated since JDK 9.
         </description>
-        <priority>1</priority>
+        <priority>2</priority>
         <properties>
             <property name="xpath">
                 <value>
@@ -28,20 +27,20 @@
 
     <rule name="UseJavaTimeApi"
           language="java"
-          message="Use "
+          message="Consider using Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat"
           class="net.sourceforge.pmd.lang.rule.XPathRule">
         <description>
-            Please use the Java Time API in Java 8+
+            Please use the Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat in Java 8+
         </description>
-        <priority>1</priority>
+        <priority>3</priority>
         <properties>
             <property name="xpath">
                 <value><![CDATA[//../ClassOrInterfaceType[
-        typeof(@Image, 'java.util.Date')
+        typeIs('java.util.Date')
         or
-        typeof(@Image, 'java.util.Calendar')
+        typeIs('java.util.Calendar')
         or
-        typeof(@Image, 'java.text.SimpleDateFormat')
+        typeIs('java.text.SimpleDateFormat')
             ]]]></value>
             </property>
         </properties>
