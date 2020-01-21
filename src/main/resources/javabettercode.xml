@@ -8,6 +8,19 @@
         Rules which enforce better Java code.
     </description>
 
+    <!-- Misc -->
+    <rule ref="category/java/errorprone.xml/DoNotCallGarbageCollectionExplicitly" />
+    <rule ref="category/java/errorprone.xml/DontImportSun" />
+    <rule ref="category/java/errorprone.xml/UnconditionalIfStatement" />
+    <rule ref="category/java/performance.xml/InefficientEmptyStringCheck" />
+    <rule ref="category/java/design.xml/SimplifyBooleanExpressions" />
+    <rule ref="category/java/design.xml/SimplifiedTernary" />
+
+    <!-- Null checks -->
+    <rule ref="category/java/design.xml/SimplifyConditional" />
+    <rule ref="category/java/errorprone.xml/BrokenNullCheck" />
+    <rule ref="category/java/errorprone.xml/MisplacedNullCheck" />
+
     <!-- Syntax -->
     <rule ref="category/java/bestpractices.xml/MissingOverride" />
     <rule ref="category/java/codestyle.xml/UseDiamondOperator" />
@@ -52,5 +65,6 @@
     <rule ref="category/java/errorprone.xml/EmptyWhileStmt" />
     <rule ref="category/java/codestyle.xml/DuplicateImports" />
     <rule ref="category/java/performance.xml/BooleanInstantiation" />
+    <rule ref="category/java/performance.xml/StringToString" />
 
 </ruleset>
