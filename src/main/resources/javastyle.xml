@@ -65,5 +65,21 @@
 
     <!-- Loops -->
     <rule ref="category/java/bestpractices.xml/AvoidReassigningLoopVariables" />
+    <rule ref="category/java/errorprone.xml/DontUseFloatTypeForLoopIndices" />
+    <rule ref="category/java/bestpractices.xml/WhileLoopWithLiteralBoolean" />
+
+    <!-- Literals -->
+    <rule ref="category/java/errorprone.xml/AvoidLiteralsInIfCondition">
+        <properties>
+            <property name="ignoreMagicNumbers" value="-1,0,1" />
+        </properties>
+    </rule>
+    <rule ref="category/java/errorprone.xml/AvoidDuplicateLiterals">
+        <properties>
+            <property name="maxDuplicateLiterals" value="3" />
+            <property name="minimumLength" value="1" />
+            <property name="skipAnnotations" value="true" />
+        </properties>
+    </rule>
 
 </ruleset>

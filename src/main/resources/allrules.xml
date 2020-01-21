@@ -13,5 +13,6 @@
     <rule ref="javaexceptions.xml" />
     <rule ref="javalogging.xml" />
     <rule ref="javamaintainability.xml" />
+    <rule ref="javatest.xml" />
 
 </ruleset>
