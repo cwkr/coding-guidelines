@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `category/java/cwkr/performance.xml`
+- `UseCommonsStringUtils` rule
+- `AvoidLombokExperimental` rule
+
 ### Changed
 
 - Maven Artefact name changed from **cwkr-coding-guidelines** to **cwkr-pmd**

@@ -25,6 +25,21 @@
         </properties>
     </rule>
 
+    <rule name="AvoidLombokExperimental"
+            language="java"
+            message="Avoid using lombok experimental features"
+            class="de.cwkr.pmd.lang.java.BlockedType">
+        <description>
+            Please don't use lombok experimental features as they are not es robustly supported as main features
+        </description>
+        <priority>3</priority>
+        <properties>
+            <property name="prefixes">
+                <value>lombok.experimental.</value>
+            </property>
+        </properties>
+    </rule>
+
     <rule name="UseJavaTimeApi"
           language="java"
           message="Consider using Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat"
@@ -42,6 +57,21 @@
         or
         typeIs('java.text.SimpleDateFormat')
             ]]]></value>
+            </property>
+        </properties>
+    </rule>
+
+    <rule name="UseCommonsStringUtils"
+            language="java"
+            message="Use org.apache.commons.lang3.StringUtils"
+            class="de.cwkr.pmd.lang.java.BlockedType">
+        <description>
+            Please use org.apache.commons.lang3.StringUtils instead of another StringUtils implementation
+        </description>
+        <priority>3</priority>
+        <properties>
+            <property name="prefixes">
+                <value>org.apache.commons.lang.StringUtils|org.springframework.util.StringUtils|org.junit.platform.commons.util.StringUtils</value>
             </property>
         </properties>
     </rule>

@@ -9,7 +9,7 @@
     </description>
 
     <rule ref="category/java/cwkr/codestyle.xml" />
-    <rule ref="category/java/cwkr/bettercode.xml" />
+    <rule ref="category/java/cwkr/performance.xml" />
     <rule ref="category/java/cwkr/exceptions.xml" />
     <rule ref="category/java/cwkr/logging.xml" />
     <rule ref="category/java/cwkr/maintainability.xml" />
