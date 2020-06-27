@@ -1,3 +1,6 @@
+node_modules/
 target/
 .idea/
+yarn.lock
+yarn-error.log
 *.iml
