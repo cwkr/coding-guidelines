@@ -7,6 +7,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Maven Artefact name changed from **cwkr-coding-guidelines** to **cwkr-pmd**
+- `allrules.xml` moved to `category/java/cwkr/recommended.xml`
+- `javastyle.xml` moved to `category/java/cwkr/codestyle.xml`
+- `javaexceptions.xml` moved to `category/java/cwkr/exceptions.xml`
+- `javalogging.xml` moved to `category/java/cwkr/logging.xml`
+- `javamaintainability.xml` moved to `maintainability.xml`
+
+### Removed
+
+- `cwkr_checks.xml`
+
 
 ## [1.2.0] - 2020-01-19
 

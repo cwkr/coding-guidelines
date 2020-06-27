@@ -49,7 +49,7 @@
             <property name="strict" value="true" />
         </properties>
     </rule>
-    <rule ref="category/java/custom.xml/AvoidFinalizeMethod" />
+    <rule ref="category/java/cwkr/custom.xml/AvoidFinalizeMethod" />
 
     <!-- Comparison -->
     <rule ref="category/java/errorprone.xml/OverrideBothEqualsAndHashcode" />
