@@ -8,11 +8,11 @@ This project collects coding conventions and best practices.
 This project contains the following [PMD](https://pmd.github.io/) rule sets.
 
 * `category/java/cwkr/recommended.xml`
-  * `category/java/cwkr/bettercode.xml`
   * `category/java/cwkr/codestyle.xml`
   * `category/java/cwkr/exceptions.xml`
   * `category/java/cwkr/logging.xml`
   * `category/java/cwkr/maintainability.xml`
+  * `category/java/cwkr/performance.xml`
 
 They can be used to check Java source code using [Maven](https://maven.apache.org/) as follows:
 

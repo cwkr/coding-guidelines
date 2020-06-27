@@ -15,11 +15,8 @@
             <property name="methodReportLevel" value="15" />
         </properties>
     </rule>
-    <rule ref="category/java/design.xml/NPathComplexity">
-        <priority>1</priority>
-        <properties>
-            <property name="reportLevel" value="1000" />
-        </properties>
-    </rule>
+    <rule ref="category/java/design.xml/SimplifyBooleanExpressions" />
+    <rule ref="category/java/design.xml/SimplifiedTernary" />
+    <rule ref="category/java/design.xml/SimplifyConditional" />
 
 </ruleset>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data xmlns="http://pmd.sourceforge.net/rule-tests"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests https://pmd.sourceforge.io/rule-tests_1_0_0.xsd">
+
+    <test-code>
+        <description>Other StringUtils used</description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>1</expected-linenumbers>
+        <expected-messages>
+            <message>Use org.apache.commons.lang3.StringUtils</message>
+        </expected-messages>
+        <code><![CDATA[
+import org.springframework.util.StringUtils;
+
+public class Example {
+    public static void main(String[] args) {
+        if (StringUtils.hasText(args[1])) {
+        }
+    }
+}
+         ]]></code>
+        <source-type>java</source-type>
+    </test-code>
+</test-data>
