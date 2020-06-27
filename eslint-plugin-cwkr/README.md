@@ -4,7 +4,7 @@
 
 ```bash
 $ yarn add --dev eslint-plugin-cwkr
-$ npm iinstall --save-dev eslint-plugin-cwkr
+$ npm install --save-dev eslint-plugin-cwkr
 ```
 
 ## Usage
@@ -18,3 +18,7 @@ $ npm iinstall --save-dev eslint-plugin-cwkr
     ]
 }
 ```
+
+## Licensing
+
+[The Apache License, Version 2.0](LICENSE)
