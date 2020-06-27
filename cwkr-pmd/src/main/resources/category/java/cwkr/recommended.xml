@@ -8,10 +8,10 @@
         Recommended Rules according to coding conventions and best practices.
     </description>
 
-    <rule ref="javastyle.xml" />
-    <rule ref="javabettercode.xml" />
-    <rule ref="javaexceptions.xml" />
-    <rule ref="javalogging.xml" />
-    <rule ref="javamaintainability.xml" />
+    <rule ref="category/java/cwkr/codestyle.xml" />
+    <rule ref="category/java/cwkr/bettercode.xml" />
+    <rule ref="category/java/cwkr/exceptions.xml" />
+    <rule ref="category/java/cwkr/logging.xml" />
+    <rule ref="category/java/cwkr/maintainability.xml" />
 
 </ruleset>

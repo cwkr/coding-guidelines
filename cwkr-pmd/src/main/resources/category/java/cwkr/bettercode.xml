@@ -30,7 +30,7 @@
     <rule ref="category/java/bestpractices.xml/ReplaceVectorWithList" />
     <rule ref="category/java/bestpractices.xml/ReplaceHashtableWithMap" />
     <rule ref="category/java/bestpractices.xml/UseTryWithResources" />
-    <rule ref="category/java/custom.xml/UseJavaTimeApi" />
+    <rule ref="category/java/cwkr/custom.xml/UseJavaTimeApi" />
 
     <!-- Loops -->
     <rule ref="category/java/bestpractices.xml/ForLoopCanBeForeach" />

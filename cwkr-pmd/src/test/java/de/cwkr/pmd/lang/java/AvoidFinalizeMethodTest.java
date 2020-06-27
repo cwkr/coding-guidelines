@@ -5,6 +5,6 @@ import net.sourceforge.pmd.testframework.SimpleAggregatorTst;
 public class AvoidFinalizeMethodTest extends SimpleAggregatorTst {
     @Override
     public void setUp() {
-        addRule("category/java/custom.xml", "AvoidFinalizeMethod");
+        addRule("category/java/cwkr/custom.xml", "AvoidFinalizeMethod");
     }
 }

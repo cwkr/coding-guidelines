@@ -5,6 +5,6 @@ import net.sourceforge.pmd.testframework.SimpleAggregatorTst;
 public class UseJavaTimeApiTest extends SimpleAggregatorTst {
     @Override
     public void setUp() {
-        addRule("category/java/custom.xml", "UseJavaTimeApi");
+        addRule("category/java/cwkr/custom.xml", "UseJavaTimeApi");
     }
 }
