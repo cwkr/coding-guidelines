@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.cwkr</groupId>
     <artifactId>cwkr-coding-guidelines</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <packaging>jar</packaging>
     <name>cwkr-coding-guidelines</name>
     <url>https://github.com/cwkr/coding-guidelines</url>
@@ -37,6 +37,10 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
     <distributionManagement>
+        <relocation>
+            <groupId>de.cwkr</groupId>
+            <artifactId>cwkr-pmd</artifactId>
+        </relocation>
         <snapshotRepository>
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
@@ -115,12 +119,12 @@
         <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-core</artifactId>
-            <version>6.20.0</version>
+            <version>6.24.0</version>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-java</artifactId>
-            <version>6.20.0</version>
+            <version>6.24.0</version>
         </dependency>
     </dependencies>
 </project>
