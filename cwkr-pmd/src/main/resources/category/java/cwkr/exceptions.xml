@@ -21,5 +21,7 @@
     <rule ref="category/java/errorprone.xml/AvoidInstanceofChecksInCatchClause" />
     <rule ref="category/java/errorprone.xml/DoNotThrowExceptionInFinally" />
     <rule ref="category/java/errorprone.xml/EmptyCatchBlock" />
+    <rule ref="category/java/design.xml/ExceptionAsFlowControl" />
+    <rule ref="category/java/errorprone.xml/ReturnFromFinallyBlock" />
 
 </ruleset>

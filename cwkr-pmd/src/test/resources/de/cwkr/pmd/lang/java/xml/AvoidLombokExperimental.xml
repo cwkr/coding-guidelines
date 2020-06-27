@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data xmlns="http://pmd.sourceforge.net/rule-tests"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests https://pmd.sourceforge.io/rule-tests_1_0_0.xsd">
+    <test-code>
+        <description>Lombok experimental import</description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>1</expected-linenumbers>
+        <expected-messages>
+            <message>Avoid using lombok experimental features</message>
+        </expected-messages>
+        <code><![CDATA[
+import lombok.experimental.Accessors;
+import lombok.Getter;
+import lombok.Setter;
+
+@Accessors(fluent = true)
+public class AccessorsExample {
+    @Getter @Setter
+    private int age = 10;
+}
+         ]]></code>
+        <source-type>java</source-type>
+    </test-code>
+    <test-code>
+        <description>Lombok experimental inline usage</description>
+        <expected-problems>1</expected-problems>
+        <expected-linenumbers>4</expected-linenumbers>
+        <expected-messages>
+            <message>Avoid using lombok experimental features</message>
+        </expected-messages>
+        <code><![CDATA[
+import lombok.Getter;
+import lombok.Setter;
+
+@lombok.experimental.Accessors(fluent = true)
+public class AccessorsExample {
+    @Getter @Setter
+    private int age = 10;
+}
+         ]]></code>
+        <source-type>java</source-type>
+    </test-code>
+
+    <test-code>
+        <description>Lombok experimental types</description>
+        <expected-problems>2</expected-problems>
+        <expected-linenumbers>1,5</expected-linenumbers>
+        <expected-messages>
+            <message>Avoid using lombok experimental features</message>
+            <message>Avoid using lombok experimental features</message>
+        </expected-messages>
+        <code><![CDATA[
+import lombok.experimental.Helper;
+
+public class Example {
+    public static void main(String[] args) {
+        lombok.experimental.UtilityClass ut = null;
+        Helper helper = null;
+    }
+}
+         ]]></code>
+        <source-type>java</source-type>
+    </test-code>
+</test-data>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data xmlns="http://pmd.sourceforge.net/rule-tests"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests https://pmd.sourceforge.io/rule-tests_1_0_0.xsd">
+    <test-code>
+        <description>Report usage of java.util.Date</description>
+        <expected-problems>2</expected-problems>
+        <expected-linenumbers>4,6</expected-linenumbers>
+        <expected-messages>
+            <message>Consider using Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat</message>
+            <message>Consider using Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat</message>
+        </expected-messages>
+        <code><![CDATA[
+import java.util.Date;
+
+public class MyObject {
+    private Date date;
+
+    public Date getDate() {
+        return date;
+    }
+}
+         ]]></code>
+        <source-type>java</source-type>
+    </test-code>
+    <test-code>
+        <description>Report usage of java.util.Calendar</description>
+        <expected-problems>2</expected-problems>
+        <expected-linenumbers>4,6</expected-linenumbers>
+        <expected-messages>
+            <message>Consider using Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat</message>
+            <message>Consider using Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat</message>
+        </expected-messages>
+        <code><![CDATA[
+import java.util.Calendar;
+
+public class MyObject {
+    private Calendar cal;
+
+    public Calendar getCal() {
+        return cal;
+    }
+}
+         ]]></code>
+        <source-type>java</source-type>
+    </test-code>
+    <test-code>
+        <description>Report usage of java.text.SimpleDateFormat</description>
+        <expected-problems>2</expected-problems>
+        <expected-linenumbers>5,5</expected-linenumbers>
+        <expected-messages>
+            <message>Consider using Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat</message>
+            <message>Consider using Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat</message>
+        </expected-messages>
+        <code><![CDATA[
+import java.text.SimpleDateFormat;
+
+public class MyObject {
+    public void myMethod() {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
+    }
+}
+         ]]></code>
+        <source-type>java</source-type>
+    </test-code>
+</test-data>

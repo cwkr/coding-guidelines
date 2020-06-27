@@ -3,18 +3,16 @@
 This project collects coding conventions and best practices.
 
 
-## Static Code Analysis
-
-### Using PMD
+## Static Code Analysis using PMD
 
 This project contains the following [PMD](https://pmd.github.io/) rule sets.
 
-* `allrules.xml`
-  * `javabettercode.xml`
-  * `javaexceptions.xml`
-  * `javalogging.xml`
-  * `javamaintainability.xml`
-  * `javastyle.xml`
+* `category/java/cwkr/recommended.xml`
+  * `category/java/cwkr/codestyle.xml`
+  * `category/java/cwkr/exceptions.xml`
+  * `category/java/cwkr/logging.xml`
+  * `category/java/cwkr/maintainability.xml`
+  * `category/java/cwkr/performance.xml`
 
 They can be used to check Java source code using [Maven](https://maven.apache.org/) as follows:
 
@@ -25,7 +23,7 @@ They can be used to check Java source code using [Maven](https://maven.apache.or
     <version>3.12.0</version>
     <configuration>
         <rulesets>
-            <ruleset>/allrules.xml</ruleset>
+            <ruleset>/category/java/cwkr/recommended.xml</ruleset>
         </rulesets>
         <linkXRef>false</linkXRef>
         <printFailingErrors>true</printFailingErrors>
@@ -35,60 +33,17 @@ They can be used to check Java source code using [Maven](https://maven.apache.or
         <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-core</artifactId>
-            <version>6.20.0</version>
+            <version>6.24.0</version>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-java</artifactId>
-            <version>6.20.0</version>
+            <version>6.24.0</version>
         </dependency>
         <dependency>
             <groupId>de.cwkr</groupId>
-            <artifactId>cwkr-coding-guidelines</artifactId>
-            <version>1.2.0</version>
-        </dependency>
-    </dependencies>
-    <executions>
-        <execution>
-            <id>validate</id>
-            <phase>validate</phase>
-            <goals>
-                <goal>check</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
-```
-
-
-### Using Checkstyle
-
-This project contains a [Checkstyle](https://checkstyle.org/) configuration file named `cwkr_checks.xml`.
-It can be used to check Java source code formatting using [Maven](https://maven.apache.org/) as follows:
-
-```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-checkstyle-plugin</artifactId>
-    <version>3.1.0</version>
-    <configuration>
-        <configLocation>cwkr_checks.xml</configLocation>
-        <encoding>UTF-8</encoding>
-        <failsOnError>true</failsOnError>
-        <consoleOutput>false</consoleOutput>
-        <failOnViolation>false</failOnViolation>
-        <linkXRef>false</linkXRef>
-    </configuration>
-    <dependencies>
-        <dependency>
-            <groupId>com.puppycrawl.tools</groupId>
-            <artifactId>checkstyle</artifactId>
-            <version>8.28</version>
-        </dependency>
-        <dependency>
-            <groupId>de.cwkr</groupId>
-            <artifactId>cwkr-coding-guidelines</artifactId>
-            <version>1.2.0</version>
+            <artifactId>cwkr-pmd</artifactId>
+            <version>1.3.0</version>
         </dependency>
     </dependencies>
     <executions>
