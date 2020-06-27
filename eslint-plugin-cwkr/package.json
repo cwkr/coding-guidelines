@@ -1,0 +1,27 @@
+{
+  "name": "eslint-plugin-cwkr",
+  "version": "1.3.0-RC2",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cwkr/coding-guidelines"
+  },
+  "homepage": "https://github.com/cwkr/coding-guidelines",
+  "bugs": "https://github.com/cwkr/coding-guidelines/issues",
+  "author": "Christian Winkler",
+  "license": "Apache-2.0",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "eslint": "^7.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
+    "eslint": "^7.3.1",
+    "typescript": "^3.9.5"
+  }
+}
