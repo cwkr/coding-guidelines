@@ -20,7 +20,7 @@ They can be used to check Java source code using [Maven](https://maven.apache.or
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-pmd-plugin</artifactId>
-    <version>3.12.0</version>
+    <version>3.13.0</version>
     <configuration>
         <rulesets>
             <ruleset>/category/java/cwkr/recommended.xml</ruleset>
@@ -33,17 +33,17 @@ They can be used to check Java source code using [Maven](https://maven.apache.or
         <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-core</artifactId>
-            <version>6.24.0</version>
+            <version>6.28.0</version>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.pmd</groupId>
             <artifactId>pmd-java</artifactId>
-            <version>6.24.0</version>
+            <version>6.28.0</version>
         </dependency>
         <dependency>
             <groupId>de.cwkr</groupId>
             <artifactId>cwkr-pmd</artifactId>
-            <version>1.3.0</version>
+            <version>1.3.1</version>
         </dependency>
     </dependencies>
     <executions>
@@ -57,6 +57,11 @@ They can be used to check Java source code using [Maven](https://maven.apache.or
     </executions>
 </plugin>
 ```
+
+
+## Static Code Analysis using Stylelint
+
+[stylelint-config-cwkr](stylelint-config-cwkr/README.md)
 
 
 ## Licensing
