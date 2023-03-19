@@ -5,6 +5,44 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
+## [1.4.0] - 2023-03-19
+
+### Added
+
+- `ComparisonWithNaN` rule
+- `ImplicitSwitchFallThrough` rule
+- `UnnecessaryImport` rule
+- `UseStandardCharsets` rule
+- `EmptyControlStatement` rule
+- `UnnecessarySemicolon` rule
+- `PreserveStackTrace` rule
+- `PrimitiveWrapperInstantiation` rule
+
+### Changed
+
+- Upgraded PMD to 6.55.0
+
+### Removed
+
+- **stylelint-config-cwkr**
+- `BadComparison` deprecated rule
+- `MissingBreakInSwitch` deprecated rule
+- `UnusedImports` deprecated rule
+- `DontImportJavaLang` deprecated rule
+- `DuplicateImports` deprecated rule
+- `EmptyFinallyBlock` deprecated rule
+- `EmptyIfStmt` deprecated rule
+- `EmptyInitializer` deprecated rule
+- `EmptyStatementBlock` deprecated rule
+- `EmptyStatementNotInLoop` deprecated rule
+- `EmptySwitchStatements` deprecated rule
+- `EmptySynchronizedBlock` deprecated rule
+- `EmptyTryBlock` deprecated rule
+- `EmptyWhileStmt` deprecated rule
+- `BooleanInstantiation` deprecated rule
+- `ByteInstantiation` deprecated rule
+
+
 ## [1.3.1] - 2020-10-04
 
 ### Added
