@@ -18,5 +18,7 @@
     <rule ref="category/java/design.xml/SimplifyBooleanExpressions" />
     <rule ref="category/java/design.xml/SimplifiedTernary" />
     <rule ref="category/java/design.xml/SimplifyConditional" />
+    <rule ref="category/java/design.xml/MutableStaticState" />
+    <rule ref="category/java/errorprone.xml/ReturnEmptyCollectionRatherThanNull" />
 
 </ruleset>

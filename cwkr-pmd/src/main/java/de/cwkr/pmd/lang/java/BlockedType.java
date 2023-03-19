@@ -27,7 +27,7 @@ public class BlockedType extends AbstractJavaRule {
     public Object visit(ASTImportDeclaration node, Object data) {
         for (String prefix : getProperty(PREFIXES)) {
             if (node.getImportedName().startsWith(prefix)) {
-                addViolation(data, node, prefix);
+                asCtx(data).addViolation(node, prefix);
             }
         }
         return super.visit(node, data);
@@ -37,7 +37,7 @@ public class BlockedType extends AbstractJavaRule {
     public Object visit(ASTClassOrInterfaceType node, Object data) {
         for (String prefix : getProperty(PREFIXES)) {
             if (node.getImage().startsWith(prefix)) {
-                addViolation(data, node, prefix);
+                asCtx(data).addViolation(node, prefix);
             }
         }
         return super.visit(node, data);
@@ -47,7 +47,7 @@ public class BlockedType extends AbstractJavaRule {
     public Object visit(ASTAnnotation node, Object data) {
         for (String prefix : getProperty(PREFIXES)) {
             if (node.getAnnotationName().startsWith(prefix)) {
-                addViolation(data, node, prefix);
+                asCtx(data).addViolation(node, prefix);
             }
         }
         return super.visit(node, data);
