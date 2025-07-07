@@ -63,9 +63,9 @@
     <rule ref="category/java/errorprone.xml/ComparisonWithNaN" />
 
     <!-- Switch statements -->
-    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitchStmt" />
+    <rule ref="category/java/bestpractices.xml/DefaultLabelNotLastInSwitch" />
     <rule ref="category/java/errorprone.xml/ImplicitSwitchFallThrough" />
-    <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault" />
+    <rule ref="category/java/bestpractices.xml/NonExhaustiveSwitch" />
 
     <!-- Loops -->
     <rule ref="category/java/bestpractices.xml/AvoidReassigningLoopVariables" />
@@ -94,7 +94,6 @@
     <rule ref="category/java/errorprone.xml/DoNotCallGarbageCollectionExplicitly" />
     <rule ref="category/java/bestpractices.xml/AvoidMessageDigestField" />
     <rule ref="category/java/bestpractices.xml/CheckResultSet" />
-    <rule ref="category/java/cwkr/custom.xml/AvoidLombokExperimental" />
     <rule ref="category/java/cwkr/custom.xml/UseCommonsStringUtils" />
     <rule ref="category/java/bestpractices.xml/UseStandardCharsets" />
 

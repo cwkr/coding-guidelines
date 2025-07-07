@@ -11,7 +11,7 @@
     <rule name="AvoidFinalizeMethod"
             language="java"
             message="Avoid using finalizer method"
-            class="net.sourceforge.pmd.lang.rule.XPathRule">
+            class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
         <description>
             Oracle has declared Object.finalize() as deprecated since JDK 9.
         </description>
@@ -25,37 +25,22 @@
         </properties>
     </rule>
 
-    <rule name="AvoidLombokExperimental"
-            language="java"
-            message="Avoid using lombok experimental features"
-            class="de.cwkr.pmd.lang.java.BlockedType">
-        <description>
-            Please don't use lombok experimental features as they are not es robustly supported as main features
-        </description>
-        <priority>3</priority>
-        <properties>
-            <property name="prefixes">
-                <value>lombok.experimental.</value>
-            </property>
-        </properties>
-    </rule>
-
     <rule name="UseJavaTimeApi"
           language="java"
           message="Consider using Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat"
-          class="net.sourceforge.pmd.lang.rule.XPathRule">
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
         <description>
             Please use the Java Time API instead of java.util.Date, java.util.Calendar or java.text.SimpleDateFormat in Java 8+
         </description>
         <priority>3</priority>
         <properties>
             <property name="xpath">
-                <value><![CDATA[//../ClassOrInterfaceType[
-        typeIs('java.util.Date')
+                <value><![CDATA[//ClassType[
+        pmd-java:typeIsExactly('java.util.Date')
         or
-        typeIs('java.util.Calendar')
+        pmd-java:typeIsExactly('java.util.Calendar')
         or
-        typeIs('java.text.SimpleDateFormat')
+        pmd-java:typeIsExactly('java.text.SimpleDateFormat')
             ]]]></value>
             </property>
         </properties>
@@ -64,14 +49,41 @@
     <rule name="UseCommonsStringUtils"
             language="java"
             message="Use org.apache.commons.lang3.StringUtils"
-            class="de.cwkr.pmd.lang.java.BlockedType">
+            class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
         <description>
             Please use org.apache.commons.lang3.StringUtils instead of another StringUtils implementation
         </description>
         <priority>3</priority>
         <properties>
-            <property name="prefixes">
-                <value>org.apache.commons.lang.StringUtils|org.springframework.util.StringUtils|org.junit.platform.commons.util.StringUtils</value>
+            <property name="xpath">
+                <value><![CDATA[//ClassType[
+        pmd-java:typeIsExactly('org.apache.commons.lang.StringUtils')
+        or
+        pmd-java:typeIsExactly('org.springframework.util.StringUtils')
+        or
+        pmd-java:typeIsExactly('org.junit.platform.commons.util.StringUtils')
+            ]]]></value>
+            </property>
+        </properties>
+    </rule>
+
+    <rule name="UseSlf4j"
+          language="java"
+          message="Use org.slf4j.Logger instead of java.util.logging.Logger, org.apache.logging.log4j.Logger or org.apache.commons.logging.Log"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>
+            Please use org.slf4j.Logger instead of java.util.logging.Logger, org.apache.logging.log4j.Logger or org.apache.commons.logging.Log
+        </description>
+        <priority>1</priority>
+        <properties>
+            <property name="xpath">
+                <value><![CDATA[
+                //ClassType[
+                    pmd-java:typeIsExactly('java.util.logging.Logger') or
+                    pmd-java:typeIsExactly('org.apache.logging.log4j.Logger') or
+                    pmd-java:typeIsExactly('org.apache.commons.logging.Log')
+                ]
+            ]]></value>
             </property>
         </properties>
     </rule>

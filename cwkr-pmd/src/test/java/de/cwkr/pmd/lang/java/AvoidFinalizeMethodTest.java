@@ -1,6 +1,6 @@
 package de.cwkr.pmd.lang.java;
 
-import net.sourceforge.pmd.testframework.SimpleAggregatorTst;
+import net.sourceforge.pmd.test.SimpleAggregatorTst;
 
 public class AvoidFinalizeMethodTest extends SimpleAggregatorTst {
     @Override
