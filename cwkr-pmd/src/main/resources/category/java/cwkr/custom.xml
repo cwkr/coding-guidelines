@@ -62,6 +62,8 @@
         pmd-java:typeIsExactly('org.springframework.util.StringUtils')
         or
         pmd-java:typeIsExactly('org.junit.platform.commons.util.StringUtils')
+        or
+        pmd-java:typeIsExactly('org.apache.cxf.common.util.StringUtils')
             ]]]></value>
             </property>
         </properties>
